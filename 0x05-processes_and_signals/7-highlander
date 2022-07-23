@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Write a Bash script prints a message infinity with catches
+while :
+do
+	trap 'echo "I am invincible!!!"' SIGTERM
+	echo "To infinity and beyond"
+	sleep 2
+done
